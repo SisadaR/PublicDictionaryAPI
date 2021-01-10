@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dictionary_background"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_eight"
+        android:hint="@string/edit_text_string"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_background"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="@dimen/margin_eight"
+        android:padding="@dimen/margin_eight"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:text="@string/button_text"/>
+
+
+</LinearLayout>
