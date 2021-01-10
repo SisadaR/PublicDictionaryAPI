@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/word_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_eight"
@@ -22,11 +23,12 @@
         android:importantForAutofill="no"
         />
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/colorPrimary"
-    android:text="@string/button_text"/>
+    <Button
+        android:id="@+id/find_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="@string/button_text"/>
 
 
 </LinearLayout>
