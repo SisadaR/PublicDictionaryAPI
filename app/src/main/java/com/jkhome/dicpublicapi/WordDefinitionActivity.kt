@@ -10,6 +10,11 @@ class WordDefinitionActivity : AppCompatActivity() {
     private val binding: ActivityWordDefinitionBinding by lazy { ActivityWordDefinitionBinding.inflate(layoutInflater) }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_word_definition)
+        setContentView(binding.root)
+
+        binding.definitionTestView.text = intent.getStringExtra(Keyword.KEY.WORD_DEF);
+        binding.backImageView.setOnClickListener {
+            finish()
+        }
     }
 }
